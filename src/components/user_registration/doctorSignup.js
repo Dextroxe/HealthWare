@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import PasswordChecklist from "react-password-checklist";
 import axios from "axios";
+import registration_done from "./registration_done";
 
 function DoctorSignup() {
   const [validated, setValidated] = useState(false);
@@ -49,10 +50,7 @@ function DoctorSignup() {
     <>
       {success ? (
         <section>
-          <h1>Doctor Registration completed</h1>
-          <p>
-            <a href="/login">Login</a>
-          </p>
+          {registration_done("Doctor's")}
         </section>
       ) : (
         <Form noValidate validated={validated} onSubmit={handleSubmit}>

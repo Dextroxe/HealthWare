@@ -1,10 +1,13 @@
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Card, Button,Image } from "react-bootstrap";
+import "../../css/Patientdashboard.css"
 
 function PatientDashboard() {
   return (
+    <>
+    <div className="contains">
     <Container fluid>
-      <Row>
-        <Col md={3}>
+      
+        
           <Card>
             <Card.Body>
               <Card.Title>My Profile</Card.Title>
@@ -14,9 +17,9 @@ function PatientDashboard() {
               </Button>
             </Card.Body>
           </Card>
-        </Col>
+        
 
-        <Col md={3}>
+        
           <Card>
             <Card.Body>
               <Card.Title>My Appointments</Card.Title>
@@ -26,9 +29,9 @@ function PatientDashboard() {
               </Button>
             </Card.Body>
           </Card>
-        </Col>
+        
 
-        <Col md={3}>
+        
           <Card>
             <Card.Body>
               <Card.Title>My Medical Records</Card.Title>
@@ -38,9 +41,9 @@ function PatientDashboard() {
               </Button>
             </Card.Body>
           </Card>
-        </Col>
+        
 
-        <Col md={3}>
+        
           <Card>
             <Card.Body>
               <Card.Title>My Bills</Card.Title>
@@ -50,9 +53,12 @@ function PatientDashboard() {
               </Button>
             </Card.Body>
           </Card>
-        </Col>
-      </Row>
+        
+     
     </Container>
+    <Image src="https://images.unsplash.com/photo-1606166155766-87872211cd0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=607&q=50" rounded />
+    </div>
+    </>
   );
 }
 

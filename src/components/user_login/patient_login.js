@@ -64,7 +64,6 @@ function PatientLogin() {
     <>
 
       <div className="container">
-        <h1>Patient login page</h1>
         {showError && (
           <Alert variant="danger" onClose={() => setShowError(false)} dismissible>
             Invalid email or password

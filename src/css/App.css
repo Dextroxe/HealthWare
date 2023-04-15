@@ -1,19 +1,10 @@
-.App {
-  padding: 1%;
+.App{
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.content{
+  padding-top: 2%;
+  background-color: #dee2e6;
+  padding-bottom: 2%;
 }
 
-.smlCard{
-  background-color: rgba(101, 151, 211, 0.489)!important;
-
-}
-.cardHeader{
-  opacity: 1;
-}
-.cardContainer{
-  display: flex;
-  flex-direction: row;
-}

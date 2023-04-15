@@ -1,0 +1,14 @@
+.footer {
+    background-color: black;
+    height: 400px;
+    width: auto;
+    padding-top: 5%;
+}
+
+
+
+h3,p {
+    color: white;
+    text-align: center;
+}
+

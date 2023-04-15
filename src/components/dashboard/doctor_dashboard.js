@@ -1,11 +1,13 @@
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
-// import './components/dashboard/patientdashboard.css';
+import { Container, Card, Button, Image } from "react-bootstrap";
+import "../../css/Doctordashboard.css"
 
 function DoctorDashboard() {
   return (
-    <Container fluid>
-      <Row>
-        <Col md={3}>
+    <>
+    <h1>Doctor's Dashboard</h1>
+    <div className="contains">
+    <Container fluid className="cardsGo">
+     
           <Card>
             <Card.Body>
               <Card.Title>My Profile</Card.Title>
@@ -15,8 +17,7 @@ function DoctorDashboard() {
               </Button>
             </Card.Body>
           </Card>
-        </Col>
-        <Col md={3}>
+        
           <Card>
             <Card.Body>
               <Card.Title>My Appointments</Card.Title>
@@ -25,9 +26,8 @@ function DoctorDashboard() {
                 Go to Appointments
               </Button>
             </Card.Body>
-          </Card>
-        </Col>
-        <Col md={3}>
+          </Card>       
+        
           <Card>
             <Card.Body>
               <Card.Title>Patient list</Card.Title>
@@ -36,9 +36,8 @@ function DoctorDashboard() {
                 Go to Patient List
               </Button>
             </Card.Body>
-          </Card>
-        </Col>
-        <Col md={3}>
+          </Card>    
+        
           <Card>
             <Card.Body>
               <Card.Title>Prescription management</Card.Title>
@@ -47,9 +46,8 @@ function DoctorDashboard() {
                 Go to Prescription management
               </Button>
             </Card.Body>
-          </Card>
-        </Col>
-        <Col md={3}>
+          </Card>   
+        
           <Card>
             <Card.Body>
               <Card.Title>Communication tools</Card.Title>
@@ -58,9 +56,8 @@ function DoctorDashboard() {
                 Go to Communication tools
               </Button>
             </Card.Body>
-          </Card>
-        </Col>
-        <Col md={3}>
+          </Card>  
+        
           <Card>
             <Card.Body>
               <Card.Title>Medical charting</Card.Title>
@@ -69,9 +66,8 @@ function DoctorDashboard() {
                 Go to Medical charting
               </Button>
             </Card.Body>
-          </Card>
-        </Col>
-        <Col md={3}>
+          </Card>  
+        
           <Card>
             <Card.Body>
               <Card.Title>Analytics and reports</Card.Title>
@@ -80,10 +76,11 @@ function DoctorDashboard() {
                 Go to Analytics and reports
               </Button>
             </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+          </Card>          
     </Container>
+    <Image  className="imageF" src="https://plus.unsplash.com/premium_photo-1661766569022-1b7f918ac3f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGRvY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" rounded />
+    </div>
+    </>
   );
 }
 

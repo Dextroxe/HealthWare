@@ -1,28 +1,18 @@
-.card {
-    margin-bottom: 20px;
-  }
-  
-  .card-title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .card-text {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0069d9!important;
-    border-color: #0062cc;
-  }
-  
-  .col-md-3 {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
+
+.contains{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.imageF{
+  object-fit: cover;
+  width: 100%;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+button{
+  display: flex;
+  justify-content: center;
+}

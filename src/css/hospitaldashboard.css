@@ -1,18 +1,18 @@
 
 .contains{
     display: grid;
-    grid-template-columns: 50% 50%;
-}
-.imageF{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .imageF{
+    object-fit: cover;
     width: 100%;
-    height: 100%
-}
-h1{
+  }
+  h1{
     display: flex;
     justify-content: center;
     padding-bottom: 2%;
-}
-button{
+  }
+  button{
     display: flex;
     justify-content: center;
-}
+  }

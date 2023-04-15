@@ -47,7 +47,6 @@ function HospitalLogin() {
   return (
     <>
       <div className="container">
-        <h1>Hospital login page</h1>
         {showError && (
           <Alert
             variant="danger"

@@ -8,6 +8,7 @@ import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
 const LoginPage = () => {
 
     const [value, setValue] = useState();
+    const [content, setContent] = useState();
     /*
      * The second argument that will be passed to
      * `handleChange` from `ToggleButtonGroup`
@@ -19,14 +20,17 @@ const LoginPage = () => {
         if (val ===1) {
      
             setValue(<DoctorLogin/>)
+            setContent("Doctor's")
         } 
         else if (val === 2){
          
             setValue(<PatientLogin/>)
+            setContent("Patient's")
         }
         else if (val === 3){
            
             setValue(<HospitalLogin/>)
+            setContent("Hospital's")
         }
         
     };
@@ -37,10 +41,10 @@ const LoginPage = () => {
     return (
         <>
             <div className="loginBody">
-                <h1>Login for?</h1>
+            <h1>Login : {!content ? "Doctor's" : content}</h1>
 
                 <section className="navbody">
-                    <ToggleButtonGroup type="radio" name="options" defaultValue={1}  onChange={handleChange}>
+                    <ToggleButtonGroup type="radio" name="options" defaultValue={1}  className="toggle" onChange={handleChange} >
                         <ToggleButton id="tbg-radio-1" value={1}>
                             Doctor Login 
                         </ToggleButton>

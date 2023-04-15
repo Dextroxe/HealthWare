@@ -1,20 +1,11 @@
-.App {
-    padding: 1%;
-  }
+
+.landingPg{
+  border: 10px #457b9d solid;
+  border-radius: 30px;
+
+}
+
+
+
+
   
-  .App-link {
-    color: #61dafb;
-  }
-  
-  .smlCard{
-    background-color: rgba(101, 151, 211, 0.489)!important;
-    display: flex;
-    
-  }
-  .cardHeader{
-    opacity: 1;
-  }
-  .cardContainer{
-    display: flex;
-    flex-direction: row;
-  }

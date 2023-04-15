@@ -1,37 +1,39 @@
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Card, Button,Image } from 'react-bootstrap';
 // import './components/dashboard/patientdashboard.css';
 
 function HospitalDashboard() {
     return (
+        <>
+        <div className='contains'>
         <Container fluid>
-            <Row>
-                <Col md={3}>
+            
+                
                     <Card>
                         <Card.Body>
-                            <Card.Title>My Profile</Card.Title>
+                            <Card.Title>Status</Card.Title>
                             <Card.Text>
-                                View and update your profile information.
+                                View and update your information.
                             </Card.Text>
                             <Button variant="primary" href="h/profile">
                                 Go to Profile
                             </Button>
                         </Card.Body>
                     </Card>
-                </Col>
-                <Col md={3}>
+                
+                
                     <Card>
                         <Card.Body>
-                            <Card.Title>My Appointments</Card.Title>
+                            <Card.Title>All Appointments</Card.Title>
                             <Card.Text>
-                                View and manage your upcoming appointments.
+                                View and manage Patient's appointments.
                             </Card.Text>
                             <Button variant="primary" href="h/appointments">
                                 Go to Appointments
                             </Button>
                         </Card.Body>
                     </Card>
-                </Col>
-                <Col md={3}>
+                
+                
                     <Card>
                         <Card.Body>
                             <Card.Title>Patient list</Card.Title>
@@ -43,24 +45,24 @@ function HospitalDashboard() {
                             </Button>
                         </Card.Body>
                     </Card>
-                </Col>
-                <Col md={3}>
+                
+                
                     <Card>
                         <Card.Body>
                             <Card.Title>Prescription management</Card.Title>
                             <Card.Text>
-                                View your Prescription management
+                                View patient Prescription management
                             </Card.Text>
                             <Button variant="primary" href="/">
                                 Go to Prescription management
                             </Button>
                         </Card.Body>
                     </Card>
-                </Col>
-                <Col md={3}>
+                
+                
                 <Card>
                         <Card.Body>
-                            <Card.Title>Communication tools</Card.Title>
+                            <Card.Title>Emergency Communication</Card.Title>
                             <Card.Text>
                                 View your Communication tools
                             </Card.Text>
@@ -69,21 +71,21 @@ function HospitalDashboard() {
                             </Button>
                         </Card.Body>
                     </Card>
-                </Col>
-                <Col md={3}>
+                
+                
                 <Card>
                         <Card.Body>
-                            <Card.Title>Medical charting</Card.Title>
+                            <Card.Title>Medical Equipments</Card.Title>
                             <Card.Text>
-                                View your Medical charting
+                                View your Medical Equipments
                             </Card.Text>
                             <Button variant="primary" href="/bills">
-                                Go to Medical charting
+                                Go to Medical Equipments
                             </Button>
                         </Card.Body>
                     </Card>
-                </Col>
-                <Col md={3}>
+                
+                
                 <Card>
                         <Card.Body>
                             <Card.Title>Analytics and reports</Card.Title>
@@ -95,9 +97,13 @@ function HospitalDashboard() {
                             </Button>
                         </Card.Body>
                     </Card>
-                </Col>
-            </Row>
+                
+            
         </Container>
+    <Image src="https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGhvc3BpdGFsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" rounded />
+
+        </div>
+        </>
     );
 }
 

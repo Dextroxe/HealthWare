@@ -1,23 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
-.loginBody{
+
+.completeBody{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
+   justify-content: center;
+
 }
-.loginBody>h1{
+.navbody>h1{
+    display: flex;
     font-family: 'Cedarville Cursive', cursive;
     color:#22223b;
 }
-
-.loginBox{
-    margin: auto;
-    padding-bottom: 5%;
-
-}
-
 .toggle{
     display: flex;
     justify-content: space-around;

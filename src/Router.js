@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import Home from "./Home";
 import { Routes, Route } from "react-router-dom";
 import Navbars from "./components/Navbar/Navbars";
+import Footer from "./components/Navbar/footer";
 import Signup from "./components/user_registration/signup_fr";
 import HospitalSignup from "./components/user_registration/hospitalSignup";
 import DoctorSignup from "./components/user_registration/doctorSignup";
@@ -15,7 +16,6 @@ import Appointment from "./components/dashboard/pages/book_doctor_appointment";
 import Dprofile from "./components/dashboard/dProfile";
 import HProfile from "./components/dashboard/hProfile";
 import HospitalDashboard from "./components/dashboard/hospital_dashboard"
-
 function App() {
   return (
     <div className="App">
@@ -26,6 +26,7 @@ function App() {
           
               <Route path="/" element={<Home />}></Route>
               <Route path="/login" element={<LoginPage />}></Route>
+              {/* <Route path="/login" element={<HospitalDashboard />}></Route> */}
 
               <Route path="/signup" element={<Signup />}>
                 <Route path="hospital" element={<HospitalSignup />} />
@@ -55,6 +56,7 @@ function App() {
           </Routes>
         </Container>
       </div>
+      <Footer />
     </div>
   );
 }
