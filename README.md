@@ -16,6 +16,7 @@ then, consider using
 ### `nodemon` in the db Folder
 Runs Mongodb server with the database named `Medilocker`
 
-### `npm start`
-start a local host server for further interaction!!
+### `npm start` in the HeathWare  `cd Healthware/`directory again
+To start a local host server for further interaction!!
 
+Our project uses Express, Reactjs, MongoDB and some packages realted to optimization
